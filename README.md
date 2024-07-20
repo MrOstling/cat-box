@@ -82,9 +82,16 @@ Note: If it is rotating in the wrong direction you can set `rotate_direction_rev
 ### The UI
 
 If you set up a web connection, you can access the ui via a web browser. It should look something like:
+
 ![ui actions](img/ui-actions.png)
+
 with settings something like:
+
 ![ui settings](img/ui-settings.png)
+
+* Sensitivity: adjusts the threshold used to determine if there is a cat in the box. Smaller value will trigger with less wieght in the box.
+* Alert Cycles: adjusts how many cycles happen before alerts are sent on each subsuquent cycle.
+* Timed Cycle Delay: adjusts how long to go without a cat detection before cycling anyway. This is useful when you have a broken cat sensor or a cat that is too light to set off the sensor.
 
 ### The API
 
