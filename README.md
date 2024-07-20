@@ -96,4 +96,38 @@ with settings something like:
 ### The API
 
 * PATCH `/settings` 
-  * Nearly all the settings are settable by sending a json object to this endpoint with the setting name and value.
+  * Nearly all the settings are settable by sending a json object to this endpoint with the setting name and value. 
+
+### Settings
+The following are a list of configurable setting along with their default value.
+#### Wifi
+* wifi_connection_retries = 3
+* wifi_connection_backoff = 60
+* wifi_ssid
+* wifi_password
+* wifi_ip_config
+* base_url
+#### Litter Box
+* cycle_start_ignore_hall_sensor_time = 5
+* cycle_wait_time = 30
+* cycle_eating_time = 7
+* cycle_overshoot_time = 7
+* empty_overshoot_time = 5
+* empty_eating_time = 7
+* hall_pin1 = 37
+* hall_pin2 = 39
+* load_sensor_pin = 16
+* load_sensor_threshold = 3000
+* l298n_ena = 18
+* l298n_in1 = 33
+* l298n_in2 = 35
+* loop_sleep = 0.1
+* rotate_direction_reversed = False
+* timed_cycle_delay_hours = 24
+#### Alert
+* bin_full_cycles = 20
+* smtp_server
+* smtp_port
+* smtp_email
+* smtp_password
+* bin_full_recipients
